@@ -1,0 +1,16 @@
+target/
+*.class
+*.log
+*.jar
+*.war
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+.DS_Store
+*.swp
+*.swo
+pom.xml.*
