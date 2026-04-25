@@ -150,8 +150,4 @@ Vendas-MQ/
 
 ## 🔍 Monitoramento
 
-- **RabbitMQ Management**: http://localhost:15672 (cytrus/cytrus123)
-
-## 📝 Licença
-
-MIT License
+- **RabbitMQ Management**: http://localhost:15672 
