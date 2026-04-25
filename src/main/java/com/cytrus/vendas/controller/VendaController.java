@@ -6,6 +6,8 @@ import com.cytrus.vendas.service.VendaService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/vendas")
 public class VendaController {
@@ -20,5 +22,10 @@ public class VendaController {
     public ResponseEntity<Venda> criarVenda(@RequestBody VendaDto vendaDto) {
         Venda venda = vendaService.criarVenda(vendaDto);
         return ResponseEntity.ok(venda);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Venda>> listarVendas() {
+        return ResponseEntity.ok(vendaService.listarVendas());
     }
 }

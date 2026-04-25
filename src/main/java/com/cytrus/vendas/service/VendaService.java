@@ -8,6 +8,8 @@ import com.cytrus.vendas.producer.VendaProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 @Service
 public class VendaService {
     private final VendaRepository vendaRepository;
@@ -32,5 +34,9 @@ public class VendaService {
         vendaProducer.sendMenssage(dto);
 
         return vendaSalva;
+    }
+
+    public List<Venda> listarVendas() {
+        return (List<Venda>) vendaRepository.findAll();
     }
 }
